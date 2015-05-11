@@ -54,8 +54,7 @@ function user-tmp-rotate() {
 				fi
 				ln -s $HOME/$PREVDIR $HOME/$PREVIOUS_SHORT
 
-				# break loop
-				COUNTER=99
+				break # out of while loop as we found the previous month
 			fi
 
 			# else try next
